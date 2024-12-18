@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
 
 
 
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-9">
       <CustomCursor />
       <Navbar />
       <Hero />
