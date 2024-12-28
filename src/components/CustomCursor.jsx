@@ -62,8 +62,13 @@ const CustomCursor = () => {
         .cursor-follower {
           width: 10px;
           height: 10px;
-          background-color:rgb(227, 136, 120); /* Tomato color */
+          background-color: rgb(227, 136, 120); /* Tomato color */
           transform: translate(-50%, -50%) scale(0.6);
+        }
+
+        /* Prevent cursor style change when hovering over links */
+        a:hover {
+          cursor: none; /* Keep the custom cursor even over links */
         }
       `}</style>
     </>
