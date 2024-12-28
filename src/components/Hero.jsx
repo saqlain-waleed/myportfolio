@@ -4,6 +4,7 @@ import { HERO_CONTENT } from "../constants";
 import saqlainpic from "../assets/saqlainpic.jpg";
 import { Link } from 'react-scroll';  // Use react-scroll Link instead
 import { delay } from 'motion';
+import cvFile from '../assets/Saqlainresume.pdf'; 
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -61,9 +62,14 @@ function Hero() {
               >
                 Hire Me
               </Link>
-              <button className="px-6 py-3 bg-gray-200 text-gray-900 rounded-full shadow-lg hover:bg-orange-100 transition duration-300">
-                Download CV
-              </button>
+              <a
+  href={cvFile}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 bg-gray-200 text-gray-900 rounded-full shadow-lg hover:bg-orange-100 transition duration-300"
+>
+  View CV
+</a>
             </motion.div>
           </div>
         </div>

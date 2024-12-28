@@ -1,66 +1,71 @@
-// CustomCursor.js
 import React, { useEffect } from "react";
 
 const CustomCursor = () => {
   useEffect(() => {
-    const cursor = document.querySelector(".custom-cursor");
+    const cursor = document.querySelector(".cursor");
+    const cursorFollower = document.querySelector(".cursor-follower");
 
-    // Update cursor position
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = `${e.pageX}px`;
-      cursor.style.top = `${e.pageY}px`;
-    });
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
 
-    // Adding hover effect for links, buttons, and elements with "pointer" class
-    const hoverElements = document.querySelectorAll("a, button, .pointer");
-    hoverElements.forEach((element) => {
-      element.addEventListener("mouseover", () => {
-        cursor.classList.add("hovered");
-      });
-      element.addEventListener("mouseout", () => {
-        cursor.classList.remove("hovered");
-      });
-    });
+      cursor.style.left = `${mouseX}px`;
+      cursor.style.top = `${mouseY}px`;
+
+      cursorFollower.style.left = `${mouseX}px`;
+      cursorFollower.style.top = `${mouseY}px`;
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      document.removeEventListener("mousemove", () => {});
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
   return (
     <>
-      <div
-        className="custom-cursor"
-        style={{
-          position: "fixed",
-          width: "20px", 
-          height: "20px", 
-          backgroundColor: "#3498db", 
-          borderRadius: "50%",
-          pointerEvents: "none", 
-          transform: "translate(-50%, -50%)", 
-          transition: "transform 0.2s ease, background-color 0.3s ease",
-          boxShadow: "0 0 8px rgba(0, 0, 0, 0.3)", 
-          zIndex: "9999", 
-        }}
-      ></div>
-      <style>
-        {`
-          * {
-            cursor: none !important;
-          }
+      {/* Custom Cursor Elements */}
+      <div className="cursor"></div>
+      <div className="cursor-follower"></div>
 
-          .custom-cursor.hovered {
-            background-color: #9b59b6; 
-            transform: translate(-50%, -50%) scale(2); 
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); 
-          }
+      {/* Styles for the Custom Cursor */}
+      <style jsx>{`
+        /* Reset and Body Styling */
+        body {
+          margin: 0;
+          padding: 0;
+          color: #333;
+          cursor: none; /* Hide the default cursor */
+          overflow-x: hidden;
+        }
 
-          .pointer {
-            cursor: none;
-          }
-        `}
-      </style>
+        /* Custom Cursor */
+        .cursor, .cursor-follower {
+          position: fixed;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.1s ease;
+        }
+
+        /* Outer Cursor */
+        .cursor {
+          width: 40px;
+          height: 40px;
+          border: 3px solid #FF6347; /* Tomato color */
+        }
+
+        /* Inner Cursor */
+        .cursor-follower {
+          width: 10px;
+          height: 10px;
+          background-color:rgb(227, 136, 120); /* Tomato color */
+          transform: translate(-50%, -50%) scale(0.6);
+        }
+      `}</style>
     </>
   );
 };

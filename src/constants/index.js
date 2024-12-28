@@ -7,6 +7,7 @@ import django from "../assets/projects/django.png"
 import frontend from "../assets/projects/frontend.png"
 import javascript from "../assets/projects/javascript.png"
 import reacts from "../assets/projects/reacts.png"
+import scrimbareact from "../assets/projects/scrimbareact.png"
 import uet from "../assets/projects/uet.png"
 
 
@@ -93,6 +94,12 @@ export const CERTIFICATIONS = [
   },
   {
     title: "React",
+    image: scrimbareact,
+    description:
+      "Built scalable and maintainable applications using React, focusing on creating reusable UI components, managing application state efficiently with hooks, and implementing best practices for state management to ensure a seamless and dynamic user experience.",
+  }, 
+  {
+    title: "React Essential Training",
     image: reacts,
     description:
       "Built component-based applications using React, focusing on state management, hooks, and reusable UI elements.",
