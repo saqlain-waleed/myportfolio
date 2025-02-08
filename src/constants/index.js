@@ -9,6 +9,8 @@ import javascript from "../assets/projects/javascript.png"
 import reacts from "../assets/projects/reacts.png"
 import scrimbareact from "../assets/projects/scrimbareact.png"
 import uet from "../assets/projects/uet.png"
+import decathon from "../assets/projects/decathon.jpg"
+
 
 
 
@@ -79,6 +81,13 @@ export const PROJECTS = [
 ];
 
 export const CERTIFICATIONS = [
+
+  {
+    title: "Full-Stack Quiz Certificate",
+    image: decathon,
+    description:
+      "Gained foundational knowledge in front-end development, mastering HTML, CSS, React and responsive design to create visually appealing and user-friendly web-interfaces.",
+  },
 
   {
     title: "Introduction to Front-end",
