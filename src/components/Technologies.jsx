@@ -13,6 +13,8 @@ import { SiTailwindcss } from "react-icons/si"; // Tailwind CSS
 import { SiPandas } from "react-icons/si"; // Pandas
 import { SiNumpy } from "react-icons/si"; // NumPy
 import { SiPython } from "react-icons/si"; // Python
+import { SiLaravel } from "react-icons/si"; // Laravel
+import { SiPhp } from "react-icons/si"; // PHP  
 
 import { animate } from 'motion';
 
@@ -82,76 +84,77 @@ function Technologies() {
       </motion.div>
   
       {/* Second Row */}
-      <motion.div 
-      whileInView={{opacity:1, x:0}}
-      initial={{opacity: 0, x: -100}}
-      transition={{duration: 1}}      
-      className="flex flex-wrap items-center justify-center gap-2 my-4">
-        <motion.div
-        variants={iconvariants(2.5)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <DiDjango className="text-2xl md:text-8xl sm:text-7xl text-green-600" /> {/* Django */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(3)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <BsBootstrapFill className="text-2xl md:text-8xl sm:text-7xl text-purple-700" /> {/* Bootstrap */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(2)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <SiTailwindcss className="text-2xl md:text-8xl sm:text-7xl text-blue-400" /> {/* Tailwind CSS */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(7)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <SiNumpy className="text-2xl md:text-8xl sm:text-7xl text-indigo-500" /> {/* NumPy */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(4)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <SiPandas className="text-2xl md:text-8xl sm:text-7xl text-teal-500" /> {/* Pandas */}
-        </motion.div>
-      </motion.div>
+<motion.div 
+  whileInView={{opacity:1, x:0}}
+  initial={{opacity: 0, x: -100}}
+  transition={{duration: 1}}      
+  className="flex flex-wrap items-center justify-center gap-2 my-4">
+
+  <motion.div
+    variants={iconvariants(3)}
+    initial="initial"
+    animate="animate"        
+    className="rounded-2xl border-4 border-neutral-800 p-2">
+    <BsBootstrapFill className="text-2xl md:text-8xl sm:text-7xl text-purple-700" /> {/* Bootstrap */}
+  </motion.div>
+  <motion.div
+    variants={iconvariants(2)}
+    initial="initial"
+    animate="animate"        
+    className="rounded-2xl border-4 border-neutral-800 p-2">
+    <SiTailwindcss className="text-2xl md:text-8xl sm:text-7xl text-blue-400" /> {/* Tailwind CSS */}
+  </motion.div>
+  <motion.div
+    variants={iconvariants(7)}
+    initial="initial"
+    animate="animate"        
+    className="rounded-2xl border-4 border-neutral-800 p-2">
+    <SiNumpy className="text-2xl md:text-8xl sm:text-7xl text-indigo-500" /> {/* NumPy */}
+  </motion.div>
+  <motion.div
+    variants={iconvariants(4)}
+    initial="initial"
+    animate="animate"        
+    className="rounded-2xl border-4 border-neutral-800 p-2">
+    <SiPandas className="text-2xl md:text-8xl sm:text-7xl text-teal-500" /> {/* Pandas */}
+  </motion.div>
+  <motion.div
+    variants={iconvariants(2.5)}
+    initial="initial"
+    animate="animate"        
+    className="rounded-2xl border-4 border-neutral-800 p-2">
+    <SiLaravel className="text-2xl md:text-8xl sm:text-7xl text-red-600" /> {/* Laravel */}
+  </motion.div>
+</motion.div>
   
       {/* Third Row */}
-      <motion.div 
-      whileInView={{opacity:1, x:0}}
-      initial={{opacity: 0, x: -100}}
-      transition={{duration: 1}}      
-      className="flex flex-wrap items-center justify-center gap-2 my-4">
-        <motion.div
-        variants={iconvariants(2.5)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <DiGit className="text-2xl md:text-8xl sm:text-7xl text-red-500" /> {/* Git */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(3)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <AiFillGithub className="text-2xl md:text-8xl sm:text-7xl text-gray-800" /> {/* GitHub */}
-        </motion.div>
-        <motion.div
-        variants={iconvariants(2)}
-        initial="initial"
-        animate="animate"        
-        className="rounded-2xl border-4 border-neutral-800 p-2">
-          <SiPython className="text-2xl md:text-8xl sm:text-7xl text-blue-400" /> {/* Python */}
-        </motion.div>
-      </motion.div>
+<motion.div 
+  whileInView={{opacity:1, x:0}}
+  initial={{opacity: 0, x: -100}}
+  transition={{duration: 1}}      
+  className="flex flex-wrap items-center justify-center gap-2 my-4">
+    <motion.div
+      variants={iconvariants(2.5)}
+      initial="initial"
+      animate="animate"        
+      className="rounded-2xl border-4 border-neutral-800 p-2">
+      <DiGit className="text-2xl md:text-8xl sm:text-7xl text-red-500" /> {/* Git */}
+    </motion.div>
+    <motion.div
+      variants={iconvariants(3)}
+      initial="initial"
+      animate="animate"        
+      className="rounded-2xl border-4 border-neutral-800 p-2">
+      <AiFillGithub className="text-2xl md:text-8xl sm:text-7xl text-gray-800" /> {/* GitHub */}
+    </motion.div>
+    <motion.div
+      variants={iconvariants(2)}
+      initial="initial"
+      animate="animate"        
+      className="rounded-2xl border-4 border-neutral-800 p-2">
+      <SiPhp className="text-2xl md:text-8xl sm:text-7xl text-blue-400" /> {/* PHP */}
+    </motion.div>
+</motion.div>
     </div>
   );
   
