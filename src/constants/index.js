@@ -14,17 +14,17 @@ import decathon from "../assets/projects/decathon.jpg"
 
 
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in building responsive and user-friendly web applications. Proficient in front-end technologies like HTML, CSS, JavaScript, React, and modern styling frameworks such as Bootstrap, I pair these with robust back-end tools like Laravel, PHP, and MySQL to create scalable and dynamic solutions. As a 4th-year computer science student, I have combined academic learning with hands-on projects to develop innovative applications that deliver seamless user experiences. I am eager to apply my skills in real-world projects and continue growing as a developer.`;
+export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in building responsive and user-friendly web applications. Proficient in front-end technologies like HTML, CSS, JavaScript, React, Angular and modern styling frameworks such as Bootstrap, I pair these with robust back-end tools like ASP.NET, C#, and MySQL to create scalable and dynamic solutions. As a 4th-year computer science student, I have combined academic learning with hands-on projects to develop innovative applications that deliver seamless user experiences. I am eager to apply my skills in real-world projects and continue growing as a developer.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a strong passion for creating efficient and user-friendly web applications. As a 4th-year student, I have honed my skills in technologies such as React, PHP, and MySQL, along with front-end frameworks like Bootstrap . My journey in web development began with a deep curiosity for how things work, which has evolved into hands-on experience through academic projects and personal ventures. I thrive in collaborative environments, tackling complex challenges to deliver high-quality solutions. Outside of coding, I stay active, explore new technologies, and contribute to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a strong passion for creating efficient and user-friendly web applications. As a 4th-year student, I have honed my skills in technologies such as React, Angular, C#, and MySQL, along with front-end frameworks like Bootstrap . My journey in web development began with a deep curiosity for how things work, which has evolved into hands-on experience through academic projects and personal ventures. I thrive in collaborative environments, tackling complex challenges to deliver high-quality solutions. Outside of coding, I stay active, explore new technologies, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "May 2025 - August 2025",
-    role: "Laravel & PHP Intern",
-    company: "DevioTech",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["HTML", "CSS", "Javascript", "PHP", "Laravel", "MySQL"],
+    year: "June 2025 - Present",
+    role: "ASP.NET & Agular Intern",
+    company: "Apply Dreams",
+    description: `Led a team in developing and maintaining web applications using Angular and ASP.NET. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    technologies: ["HTML", "CSS", "Javascript", "Angular", "ASP.NET", "MySQL"],
   },
 
 ];
@@ -37,20 +37,21 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React"],
   },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "React", "PHP", "MySQL"],
-  },
+{
+  title: "E-commerce Website",
+  image: project4,  // You can keep this image or replace it with one related to your e-commerce project
+  description:
+    "A fully functional e-commerce platform with product listings, shopping cart, payment gateway integration, and user authentication.",
+  technologies: ["HTML", "CSS", "Angular", "ASP.NET", "MySql"],  // Common tech stack for e-commerce
+},
+
 
   {
     title: "Smart Quest",
     image: project2,
     description:
       "Smart Quest is an advanced request and complaint handling system designed to streamline and automate the management of requests within organizations. It ensures that tasks, requests, and complaints are addressed efficiently while maintaining accountability and a clear escalation hierarchy. ",
-    technologies: ["HTML", "CSS", "React", "Bootstrap", "Django", "MySQL"],
+    technologies: ["HTML", "CSS", "Angular", "Bootstrap", "ASP.NET", "MySQL"],
   },
 
 ];
