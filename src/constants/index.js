@@ -21,7 +21,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer w
 export const EXPERIENCES = [
   {
     year: "Oct 2024 - Present",
-    role: "ASP.NET & Agular Intern",
+    role: "ASP.NET & Agular",
     company: "Apply Dreams",
     description: `Led a team in developing and maintaining web applications using Angular and ASP.NET. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["HTML", "CSS", "Javascript", "Angular", "ASP.NET", "MySQL"],
